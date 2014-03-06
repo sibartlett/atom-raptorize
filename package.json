@@ -1,0 +1,24 @@
+{
+  "name": "raptorize",
+  "version": "0.0.0",
+  "author": "Simon Bartlett <simon@sibartlett.com>",
+  "description": "Raptorize your atom.",
+  "repository": "https://github.com/sibartlett/atom-raptorize",
+  "license": "MIT",
+  "keywords": [
+    "raptor",
+    "velociraptor",
+    "dinosaur",
+    "dinosaurs",
+    "jurassic",
+    "park"
+  ],
+  "main": "./index",
+  "activationEvents": [
+    "raptorize"
+  ],
+  "dependencies": {},
+  "engines": {
+    "atom": "*"
+  }
+}
