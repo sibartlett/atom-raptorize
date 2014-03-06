@@ -1,6 +1,6 @@
 {
   "name": "raptorize",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Simon Bartlett <simon@sibartlett.com>",
   "description": "Raptorize your atom.",
   "repository": "https://github.com/sibartlett/atom-raptorize",
