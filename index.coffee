@@ -1,17 +1,9 @@
 locked = false
-audioContext = new (webkitAudioContext || AudioContext)()
 
 playSound = ->
-    request = new XMLHttpRequest()
-    request.open 'GET', 'atom://raptorize/assets/raptor-sound.ogg', true
-    request.responseType = 'arraybuffer'
-    request.onload = ->
-      audioContext.decodeAudioData request.response, (buffer) ->
-        source = audioContext.createBufferSource()
-        source.buffer = buffer
-        source.connect(audioContext.destination)
-        source.start(0)
-    request.send()
+  sound = require './assets/raptor-sound'
+  audio = new Audio(sound())
+  audio.play()
 
 animateRaptor = ->
   atom.workspaceView.append '<img id="elRaptor" style="display: none" src="atom://raptorize/assets/raptor.png" />'
