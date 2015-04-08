@@ -1,3 +1,5 @@
+$ = require 'jquery'
+
 locked = false
 
 playSound = ->
@@ -6,8 +8,8 @@ playSound = ->
   audio.play()
 
 animateRaptor = ->
-  atom.workspaceView.append '<img id="elRaptor" style="display: none" src="atom://raptorize/assets/raptor.png" />'
-  raptor = atom.workspaceView.find '#elRaptor'
+  $(document.body).append '<img id="elRaptor" style="display: none" src="atom://raptorize/assets/raptor.png" />'
+  raptor = $(document.body).find '#elRaptor'
   raptor.css
     position: 'fixed'
     bottom: '-700px'
@@ -32,4 +34,4 @@ run = ->
 
 module.exports =
   activate: ->
-    atom.workspaceView.command 'raptorize', '.editor', run
+    atom.commands.add 'atom-text-editor', 'raptorize', run
