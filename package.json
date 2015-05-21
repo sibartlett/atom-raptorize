@@ -1,6 +1,6 @@
 {
   "name": "raptorize",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "author": "Simon Bartlett <simon@sibartlett.com>",
   "description": "Raptorize your atom.",
   "repository": "https://github.com/sibartlett/atom-raptorize",
@@ -15,7 +15,9 @@
   ],
   "main": "./index",
   "activationCommands": {
-    "atom-workspace": ["raptorize"]
+    "atom-workspace": [
+      "raptorize"
+    ]
   },
   "dependencies": {
     "jquery": "^2"
