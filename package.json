@@ -14,9 +14,9 @@
     "park"
   ],
   "main": "./index",
-  "activationEvents": [
-    "raptorize"
-  ],
+  "activationCommands": {
+    "atom-workspace": ["raptorize"]
+  },
   "dependencies": {
     "jquery": "^2"
   },
