@@ -34,4 +34,4 @@ run = ->
 
 module.exports =
   activate: ->
-    atom.commands.add 'atom-text-editor', 'raptorize', run
+    atom.commands.add 'atom-workspace', 'raptorize', run
