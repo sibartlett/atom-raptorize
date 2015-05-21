@@ -22,5 +22,12 @@
   },
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
+  },
+  "consumedServices": {
+    "clippy": {
+      "versions": {
+        "^1.0.0": "consumeClippyService"
+      }
+    }
   }
 }

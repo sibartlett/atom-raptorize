@@ -1,6 +1,19 @@
+{Disposable} = require 'atom'
 $ = require 'jquery'
 
+clippy = null
+
 locked = false
+
+quotes = [
+  'Clever girl'
+  'Shoot her! Shoot her!'
+  'Hold on to your butts'
+  'Spared no expense'
+  'Life finds a way'
+  'It\'s a unix system! I know this!'
+  'God help us, we\'re in the hands of engineers.'
+]
 
 playSound = ->
   sound = require './assets/raptor-sound'
@@ -31,7 +44,15 @@ run = ->
     locked = true
     playSound()
     animateRaptor()
+    if clippy
+      quote = quotes[Math.floor(Math.random() * quotes.length)];
+      clippy.speak quote
 
 module.exports =
+
+  consumeClippyService: (service) ->
+    clippy = service
+    new Disposable -> clippy = null
+
   activate: ->
     atom.commands.add 'atom-workspace', 'raptorize', run
