@@ -1,5 +1,7 @@
 # Raptorize
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sibartlett/atom-raptorize.svg)](https://greenkeeper.io/)
+
 Raptorize your Atom.
 
 Run Raptorize from the Command Palette ```cmd-shift-P```.
